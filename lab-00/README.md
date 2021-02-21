@@ -2,7 +2,7 @@
     <img src="../resources/header_viii.png">
 </p>
 
-# Openathon VIII QUARKUS
+# Openathon VIII QUARKUS - Algo de teoría e instalación
 
 ## Primer vistazo a Quarkus
 
@@ -21,9 +21,21 @@ Quarkus está definido como ***SUPERSONIC SUBATOMIC JAVA***, ¿porqué?
 - **SUBATOMIC**
   - Pequeño en todos los aspectos, consumo de recursos, tamaño de las imágenes binarias…
 
+Podéis ampliar información en su [página web](https://quarkus.io/).
+
 ## ¿Qué vamos a hacer?
 
-En este Openathon vamos a comprobar si realmente Quarkus supone una diferencia frente a otros framework y en particular al que actualmente es el rey: Spring Boot. Vamos a crear dos pequeñas (muy pequeñas no os preocupéis 😊) aplicaciones con cada uno de los frameworks y vamos a comparar su desempeño directamente en nuestra JVM y después en contenedores Docker utilizando imágenes no nativas y nativas.
+En este Openathon vamos a comprobar si realmente Quarkus supone una diferencia frente a otros framework y en particular al que actualmente es el rey: Spring Boot. Vamos a crear dos pequeñas (muy pequeñas no os preocupéis :sweat_smile:) aplicaciones con cada uno de los frameworks y vamos a comparar su desempeño directamente en nuestra JVM y después en contenedores Docker utilizando imágenes no nativas y nativas.
+
+
+## ¿Qué necesitamos?
+
+Para realizar las actividades, necesitamos comprobar que la máquina donde vamos a hacerlo dispone de:
+
+- [JDK 8 or 11 instalado] (https://www.oracle.com/es/java/technologies/javase-jdk11-downloads.html).
+- La variable [JAVA_HOME](https://docs.oracle.com/cd/E19182-01/821-0917/inst_jdk_javahome_t/index.html) correctamente configurada.
+- [Opcional] Un IDE que nos facilite el trabajo. En nuestro caso hemos utilizado [Visual Studio Code](https://code.visualstudio.com/), pero cualquier otro sería valido o incluso no usar ninguno y realizar todas las actividades con el Notepad, textEdit, Vim…
+- [Docker](https://www.docker.com/) u otro gestor de contenedores.
 
 [< Introduccion](../README.md)  | [Lab 01>](../lab-01) 
 

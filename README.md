@@ -19,3 +19,10 @@ El indice de las actividades es:
 * [**LAB 4. Comparando con Spring Boot y conclusiones**](./lab-04/README.md)
 
 Iremos publicando diariamente los distintos laboratorios, para que los participantes podáis ir realizandolos a vuestro ritmo y compartir con la comunidad vuestras dudas y avances.
+
+
+[Lab 00 >](./lab-00/README.md)
+
+<p align="center">
+    <img src="resources/header.png">
+</p>

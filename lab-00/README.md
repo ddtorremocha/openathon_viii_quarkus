@@ -21,7 +21,7 @@ Quarkus está definido como ***SUPERSONIC SUBATOMIC JAVA***, ¿porqué?
 - **SUBATOMIC**
   - Pequeño en todos los aspectos, consumo de recursos, tamaño de las imágenes binarias…
 
-Podéis ampliar información en su [página web](https://quarkus.io/){:target="_blank"}.
+Podéis ampliar información en su [página web](https://quarkus.io/).
 
 ## ¿Qué vamos a hacer?
 
@@ -32,10 +32,10 @@ En este Openathon vamos a comprobar si realmente Quarkus supone una diferencia f
 
 Para realizar las actividades, necesitamos comprobar que la máquina donde vamos a hacerlo dispone de:
 
-- [JDK 8 or 11 instalado](https://www.oracle.com/es/java/technologies/javase-jdk11-downloads.html){:target="_blank"}.
-- La variable [JAVA_HOME](https://docs.oracle.com/cd/E19182-01/821-0917/inst_jdk_javahome_t/index.html){:target="_blank"} correctamente configurada.
-- [Opcional] Un IDE que nos facilite el trabajo. En nuestro caso hemos utilizado [Visual Studio Code](https://code.visualstudio.com/){:target="_blank"}, pero cualquier otro sería valido o incluso no usar ninguno y realizar todas las actividades con el Notepad, textEdit, Vim…
-- [Docker](https://www.docker.com/){:target="_blank"} u otro gestor de contenedores.
+- [JDK 8 or 11 instalado](https://www.oracle.com/es/java/technologies/javase-jdk11-downloads.html).
+- La variable [JAVA_HOME](https://docs.oracle.com/cd/E19182-01/821-0917/inst_jdk_javahome_t/index.html) correctamente configurada.
+- [Opcional] Un IDE que nos facilite el trabajo. En nuestro caso hemos utilizado [Visual Studio Code](https://code.visualstudio.com/), pero cualquier otro sería valido o incluso no usar ninguno y realizar todas las actividades con el Notepad, textEdit, Vim…
+- [Docker](https://www.docker.com/) u otro gestor de contenedores.
 
 [< Introduccion](../README.md) | [Lab 01>](../lab-01) 
 

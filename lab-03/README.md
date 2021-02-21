@@ -34,11 +34,10 @@ La instrucción se compone de:
 | -Dquarkus.native.container-build=true  | Permite la creación de un ejecutable linux native sin tener GraalVM instalado (solo es necesario si no tiene GraalVM instalado o tu Sistema operativo no es linux) |
 | -Dquarkus.container-image.build=true  | Indica a Qaurkus que cree una imagen contenedora |
 
-De nuevo, Calma y Tranquilidad, el proceso puede tardar bastante. Venga... distraeros un poco, ayudar a nuestros minions a encontrar el camino a Quarkus.
+De nuevo, Calma y Tranquilidad, el proceso puede tardar bastante. 
+Venga... distraeros un poco, ayudar a nuestros minions a encontrar el camino a Quarkus.
 
 <img src="../resources/laberinto.png">
-*Cuidado con los bolis y los monitores que os conozco…*
-
 
 Cuando acabe el proceso, podemos comprobar en el contenedor que se ha descargado una nueva imagen [“quay.io/quarkus/ubi-quarkus-native-image”](https://quay.io/repository/quarkus/ubi-quarkus-native-image?tab=info). Y que en el directorio arget del proyecto hay creado un jar openathon-quarkus-avd-1.0.0-SNAPSHOT-runner nuevo fichero “openathon-quarkus-1.0.0-SNAPSHOT-native-image-source-jar” que contiene la imagen nativa.
 
@@ -87,8 +86,7 @@ Docker stats
 ```
 
 Que nos resulta en:
-
-| <img src="../resources/img04.png"> |
+ <img src="../resources/img04.png"> 
 
 ## Ejecutamos la aplicación
 
@@ -98,8 +96,7 @@ curl -w "\n" http://localhost:8080/helloOpenathon
 ```
 
 - Al ejecutar podemos comprobar que la invocación prácticamente no supone incremento del consumo de memoria.
-
-| <img src="../resources/img05.png"> |
+ <img src="../resources/img05.png"> 
 
 
 [<Lab 02](../lab-02) | [Lab 04>](../lab-04) 

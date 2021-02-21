@@ -24,5 +24,5 @@ Iremos publicando diariamente los distintos laboratorios, para que los participa
 [Lab 00 >](./lab-00/README.md)
 
 <p align="center">
-    <img src="resources/header.png">
+    <img src="resources/header_viii.png">
 </p>

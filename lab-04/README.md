@@ -87,9 +87,7 @@ curl -w "\n" http://localhost:8080/helloOpenathonS
 
 Podemos consultar en los logs el tiempo de arranque de la aplicación. Podemos también monitorizar el consumo de recursos utilizando jconsole. 
 
-~~~
 <img src="../resources/img06.png">
-~~~
 
 Podemos extraer:
   - Arranque: unos 9 segundos (3 segundos en el caso de Quarkus).
@@ -124,7 +122,7 @@ openathon/spring                            latest          9a80de0ce394   About
 
 Comprobamos que la nueva imagen ocupa 318MB.
 
-- Lanzar la imagen al contenedor
+- Lanzar la imagen al contenedor.
 ```console
 docker run -p 8081:8081 openathon/spring
 ```
@@ -133,16 +131,14 @@ Comprobamos el tiempo de arranque de la aplicación, que en este caso son 8 segu
 2021-02-20 22:47:11.634  INFO 1 --- [           main] com.example.demo.DemoApplication         : Started DemoApplication in 8.172 seconds (JVM running for 9.726)
 ```
 
-- Una vez arrancado podemos monitorizar el contenedor con
+- Una vez arrancado podemos monitorizar el contenedor con:
 ```console
 docker stats
 ```
 
-Que nos arroja
-
-~~~
+Que nos devuelve:
 <img src="../resources/img07.png">
-~~~
+
 
 
 # Conclusiones
@@ -151,28 +147,28 @@ Vamos a los datos que hemos ido sacando.
 
 - Datos en bruto:
   - Ejecución en JVM:
-~~~
+
   | Instrucción | Quarkus | Spring Boot |
   | ------------- | ------------- | ------------- |
   | Tiempo de arranque | 3 sg | 9 sg |
   | Uso de Memoria | 20 megas | 30 megas |
   | Clases en memoria | 4500 | 6900 |
   | Procesador | 3% - 0,1% | 3% - 0,1% |
-~~~  
+ 
 		
   - Ejecución containerizada:	
-~~~
+
   | Instrucción | Quarkus JVM | Quarkus Native | Spring Boot |
   | ------------- | ------------- | ------------- |
   | Tiempo de arranque | 1,8 sg | 0,072 sg | 8 sg |
   | Uso de Memoria | 131 megas | 21 megas | 244 megas |
   | Procesador | 0,24% | 0,01% | 0,35% |	  
-~~~
+
 		
 Es posible que vuestros datos no sean idénticos, pero si deberían reflejar una conclusión parecida sobre la mejora que supone Quarkus de manera general en todos los indicadores de consumo que hemos medido y lo espectacular que es en el caso de utilizar native images.		
 
 
-[Lab 03>](../lab-03) | [Lab 04>](../lab-04) 
+[<Lab 03](../lab-03) 
 
 <p align="center">
     <img src="../resources/header_viii.png">

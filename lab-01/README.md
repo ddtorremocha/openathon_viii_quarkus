@@ -225,7 +225,7 @@ Una pista:
 
 Acuértate que cambiarle el nombre al proyecto (DprojectArtifactId) que nos conocemos… :smiling_imp:
 
-[Lab 00>](../lab-00) | [Lab 02>](../lab-02) 
+[<Lab 00](../lab-00) | [Lab 02>](../lab-02) 
 
 <p align="center">
     <img src="../resources/header_viii.png">

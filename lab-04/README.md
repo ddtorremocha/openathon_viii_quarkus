@@ -148,7 +148,7 @@ Vamos a los datos que hemos ido sacando.
 - Datos en bruto:
   - Ejecución en JVM:
 
-  | Instrucción | Quarkus | Spring Boot |
+  |  | Quarkus | Spring Boot |
   | ------------- | ------------- | ------------- |
   | Tiempo de arranque | 3 sg | 9 sg |
   | Uso de Memoria | 20 megas | 30 megas |
@@ -158,8 +158,8 @@ Vamos a los datos que hemos ido sacando.
 		
   - Ejecución containerizada:	
 
-  | Instrucción | Quarkus JVM | Quarkus Native | Spring Boot |
-  | ------------- | ------------- | ------------- |
+  |  | Quarkus JVM | Quarkus Native | Spring Boot |
+  | ------------- | ------------- | ------------- | ------------- |
   | Tiempo de arranque | 1,8 sg | 0,072 sg | 8 sg |
   | Uso de Memoria | 131 megas | 21 megas | 244 megas |
   | Procesador | 0,24% | 0,01% | 0,35% |	  

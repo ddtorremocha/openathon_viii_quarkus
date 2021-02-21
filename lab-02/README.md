@@ -67,7 +67,7 @@ Que en nuestro caso resulta en un consumo de:
 
 ¿Te animas a hacer lo mismo con el dockerfile.fast-jar?, ¿habrá alguna diferencia?.
 
-[Lab 01>](../lab-01) | [Lab 03>](../lab-03) 
+[<Lab 01](../lab-01) | [Lab 03>](../lab-03) 
 
 <p align="center">
     <img src="../resources/header_viii.png">

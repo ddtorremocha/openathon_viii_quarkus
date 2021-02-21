@@ -35,8 +35,10 @@ La instrucción se compone de:
 | -Dquarkus.container-image.build=true  | Indica a Qaurkus que cree una imagen contenedora |
 
 De nuevo, Calma y Tranquilidad, el proceso puede tardar bastante. Venga... distraeros un poco, ayudar a nuestros minions a encontrar el camino a Quarkus.
-
+<p align="center">
 <img src="../resources/laberinto.png">
+*Cuidado con los bolis y los monitores que os conozco…*
+</p>
 
 Cuando acabe el proceso, podemos comprobar en el contenedor que se ha descargado una nueva imagen [“quay.io/quarkus/ubi-quarkus-native-image”](https://quay.io/repository/quarkus/ubi-quarkus-native-image?tab=info). Y que en el directorio arget del proyecto hay creado un jar openathon-quarkus-avd-1.0.0-SNAPSHOT-runner nuevo fichero “openathon-quarkus-1.0.0-SNAPSHOT-native-image-source-jar” que contiene la imagen nativa.
 
@@ -100,7 +102,7 @@ curl -w "\n" http://localhost:8080/helloOpenathon
 | <img src="../resources/img05.png"> |
 
 
-[Lab 02>](../lab-02) | [Lab 04>](../lab-04) 
+[<Lab 02](../lab-02) | [Lab 04>](../lab-04) 
 
 <p align="center">
     <img src="../resources/header_viii.png">

@@ -1,1 +1,1 @@
-# openathon_viii_quarkus
+# Openathon VIII QUARKUS

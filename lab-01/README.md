@@ -28,7 +28,7 @@ mvn io.quarkus:quarkus-maven-plugin:1.11.3.Final:create \
 
 Vamos a descomponer la instrucción para entenderla
 
-| Instrucción | Segundo encabezado |
+| Instrucción | Significado |
 | ------------- | ------------- |
 | mvn  | Invocación a [maven](https://maven.apache.org/what-is-maven.html)|
 | io.quarkus:quarkus-maven-plugin:1.11.3.Final:create  | Indica a maven la ejecución de la instrucción “create” del plugin de quarkus  |
@@ -174,8 +174,8 @@ java.lang.AssertionError:
 Response body doesn't match expectation.
 Expected: is "Hello RESTEasy"
   Actual: Hello Openathon
-```.
-¿Se os ocurre que ha pasado? y ¿Qué podemos hacer para arreglarlo?.
+```
+:question:¿Se os ocurre que ha pasado? y ¿Qué podemos hacer para arreglarlo?.
 
 ## Empaquetando la aplicación
 
@@ -225,8 +225,8 @@ Una pista:
 
 Acuértate que cambiarle el nombre al proyecto (DprojectArtifactId) que nos conocemos… :smiling_imp:
 
-[< Introduccion](../README.md)  | [Lab 01>](../lab-01) 
+[Lab 00>](../lab-00) | [Lab 02>](../lab-02) 
 
 <p align="center">
-    <img src="../resources/header.png">
+    <img src="../resources/header_viii.png">
 </p>

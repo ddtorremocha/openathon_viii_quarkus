@@ -13,7 +13,7 @@ Juntos vamos a descubir que es Quarkus, como crear una aplicación desde cero, c
 El indice de las actividades es:
 
 * [**LAB 0. Bienvenidos. Algo de teoría e instalación**](./lab-00/README.md)
-* [**LAB 1. Creando un proyecto Quarkus**](./lab-01/README.md)
+* [**LAB 1. Nuestra aplicación "Hola Openathon!"**](./lab-01/README.md)
 * [**LAB 2. Dockerizando nuestra aplicación**](./lab-02/README.md)
 * [**LAB 3. Creando una imagen nativa**](./lab-03/README.md)
 * [**LAB 4. Comparando con Spring Boot y conclusiones**](./lab-04/README.md)

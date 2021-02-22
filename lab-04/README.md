@@ -98,11 +98,11 @@ Podemos extraer:
 ## Dockerizando la aplicación
 
 - Añadimos el dockerfile en la raíz del proyecto.
-
+```
 FROM openjdk:11.0-jre
 COPY target/*.jar /app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
-
+```
 
 - Podemos crear ahora la imagen de docker
 ```console

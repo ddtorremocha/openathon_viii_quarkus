@@ -10,8 +10,8 @@
 
 Los pasos son muy sencillos:
 
-- Abrimos una consola de comando y nos dirigimos al directorio donde vayamos a desarrollar nuestros laboratorios. Una vez allí ejecutamos:
-
+- Abrimos una consola de comando y nos dirigimos al directorio donde vayamos a desarrollar nuestros laboratorios. Una vez allí ejecutamos:  
+ 
 *Windows*
 ```console
 mvn io.quarkus:quarkus-maven-plugin:1.11.3.Final:create -DprojectGroupId=acctnr.openathon -DprojectArtifactId=openathon-quarkus -DclassName="acctnr.openathon.started.GreetingResource" -Dpath="/helloOpenathon"
@@ -36,7 +36,8 @@ Vamos a descomponer la instrucción para entenderla
 | className  | El clase que implementará el endpoint |
 | path  | El path de acceso al endpoint  |
 
-Adicionalmente podríamos también introducir el argumento “extensions” para especificar la lista de extensión a añadir al proyecto. Inicialmente no vamos a utilizar ninguna, pero si ejecutamos:
+Adicionalmente podríamos también introducir el argumento “extensions” para especificar la lista de extensión a añadir al proyecto. Inicialmente no vamos a utilizar ninguna, pero si ejecutamos:  
+
 *windows*
 ```console
 mvnw quarkus:list-extensions
@@ -116,15 +117,16 @@ public class GreetingResourceTest {
 
 Entre los principios de Quarkus está la velocidad (**SUPERSONIC!**:grin:), sin más podemos ya probar la aplicación. Quarkus provee para ello de un entorno de desarrollo integrado preparado para ser ejecutado de manera inmediata tras crear el proyecto.
 
-- Posicionamos una consola de comando en el directorio del proyecto, donde están los archivos pom.xml y mvnw y ejecutamos:
-*windows*
-```console
-mvnw compile quarkus:dev:
-```
-*linux*
-```console
-./mvnw compile quarkus:dev:
-```
+- Posicionamos una consola de comando en el directorio del proyecto, donde están los archivos pom.xml y mvnw y ejecutamos:  
+
+  *windows*
+  ```console
+   mvnw compile quarkus:dev:
+   ```
+  *linux*
+  ```console
+  ./mvnw compile quarkus:dev:
+  ```
 *Si estamos utilizando Visual Studio Code, podemos abrir uno o más consolas (o terminales) directamente en la aplicación y lanzarlo directamente.*
 
 En el resultado veremos el mensaje sobre el arranque del entorno de desarrollo de Quarkus:
@@ -167,16 +169,17 @@ Un vez hecho, si volvemos a invocar a http://localhost:8080/helloOpenathon, la r
 
 Como indicamos, el proyecto creado con el plugin de Quarkus, contiene por defecto un test unit para la ejecución de las pruebas.
 
-- Se pueden ejecutar este test invocando en consola:
-*windows*
-```console
-mvnw test
-```
-*linux*
-```console
-./mvnw test
-```
-Y deberemos obtener un resultado con éxito que incluirá:
+- Se pueden ejecutar este test invocando en consola:  
+
+  *windows*
+  ```console
+  mvnw test
+  ```
+  *linux*
+  ```console
+  ./mvnw test
+  ```
+  Y deberemos obtener un resultado con éxito que incluirá:
 
 ```console
 [INFO] Results:
@@ -200,15 +203,16 @@ Expected: is "Hello RESTEasy"
 
 Vamos a empaquetar y ejecutar la aplicación directamente en la JVM, sin utilizar el entorno de desarrollo que nos provee Qaurkus.
 
-- La aplicación se empaqueta ejecutando.
-*windows*
-```console
-mvnw package
-``` 
-*linux*
-```console
-./mvnw package
-``` 
+- La aplicación se empaqueta ejecutando.  
+
+  *windows*
+  ```console
+  mvnw package
+  ``` 
+  *linux*
+  ```console
+  ./mvnw package
+  ``` 
 
 Que debe producir dos resultados distintos dentro del directorio target de nuestro proyecto:
   - *getting-started-quarkus-1.0.0-SNAPSHOT*.  Que contiene las clases y recursos del proyecto. 

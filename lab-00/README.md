@@ -34,6 +34,7 @@ Para realizar las actividades, necesitamos comprobar que la máquina donde vamos
 
 - [JDK 8 or 11 instalado](https://www.oracle.com/es/java/technologies/javase-jdk11-downloads.html).
 - La variable [JAVA_HOME](https://docs.oracle.com/cd/E19182-01/821-0917/inst_jdk_javahome_t/index.html) correctamente configurada.
+- [Apache Maven](https://maven.apache.org/download.cgi) 3.6.2+
 - [Opcional] Un IDE que nos facilite el trabajo. En nuestro caso hemos utilizado [Visual Studio Code](https://code.visualstudio.com/), pero cualquier otro sería valido o incluso no usar ninguno y realizar todas las actividades con el Notepad, textEdit, Vim…
 - [Docker](https://www.docker.com/) u otro gestor de contenedores.
 

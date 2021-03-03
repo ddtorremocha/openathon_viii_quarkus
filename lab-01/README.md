@@ -235,7 +235,8 @@ jconsole
 ```
 
 Lo que nos debería abrir una nueva ventana:
-<img src="../resources/img08.png"> 
+
+<img src="../resources/img08.png" width="700"> 
 
 En esta nueva ventana, dentro de los "Local Process" podremos localizar y seleccionar el que queremos monitorizar, en este caso "openathon-quarkus-1.0.0-SNAPSHOT-runner.jar" y pulsar "Connect".
 

@@ -97,7 +97,7 @@ Podemos extraer:
 
 ## Dockerizando la aplicación
 
-- Añadimos el dockerfile en la raíz del proyecto.
+- Añadimos un fichero sin extensión, llamado Dockerfile en la raíz del proyecto. (\demo..)
 ```
 FROM openjdk:11.0-jre
 COPY target/*.jar /app.jar

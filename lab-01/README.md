@@ -125,7 +125,7 @@ Entre los principios de Quarkus está la velocidad (**SUPERSONIC!**:grin:), sin 
    ```
   *linux*
   ```console
-  ./mvn compile quarkus:dev:
+  ./mvnw compile quarkus:dev:
   ```
 *Si estamos utilizando Visual Studio Code, podemos abrir uno o más consolas (o terminales) directamente en la aplicación y lanzarlo directamente.*
 

@@ -60,7 +60,7 @@ server.port=8081
 
 - Podemos comprobar que funciona:
 ```console
-curl -w "\n" http://localhost:8080/helloOpenathonS
+curl -w "\n" http://localhost:8081/helloOpenathonS
 ```
 
 
@@ -81,7 +81,7 @@ java -jar target/demo-0.0.1-SNAPSHOT.jar
 
 - Y ejecutarla de la misma manera 
 ```console
-curl -w "\n" http://localhost:8080/helloOpenathonS
+curl -w "\n" http://localhost:8081/helloOpenathonS
 ```
 
 

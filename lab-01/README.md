@@ -229,7 +229,16 @@ curl -w "\n" http://localhost:8080/helloOpenathon
 ```  
 
 ## Monitorizando la aplicación en la JVM
-Podemos consultar en los logs el tiempo de arranque de la aplicación. Podemos también monitorizar el consumo de recursos utilizando la [Java Monitoring and Management Console](https://docs.oracle.com/javase/8/docs/technotes/guides/management/).
+Podemos consultar en los logs el tiempo de arranque de la aplicación. Podemos también monitorizar el consumo de recursos utilizando la [Java Monitoring and Management Console](https://docs.oracle.com/javase/8/docs/technotes/guides/management/). Para ejecutarla tendremos que escribir en nuestro terminal:
+```console
+jconsole
+```
+
+Lo que nos debería abrir una nueva ventana:
+<ing scr="..resources/img08.png"> 
+
+En esta nueva ventana, dentro de los "Local Process" podremos localizar y seleccionar el que queremos monitorizar, en este caso "openathon-quarkus-1.0.0-SNAPSHOT-runner.jar" y pulsar "Connect".
+
 
 En nuestro caso el análisis de la JVM resulta en:
 <img src="../resources/img01.png">

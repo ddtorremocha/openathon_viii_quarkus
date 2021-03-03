@@ -21,6 +21,16 @@ Como vemos utilizamos Dockerfile.jvm, no tenemos que modificar nada, todo está 
 
 El proceso puede tardar unos minutos… Calma y dock… Tranquilidad!! :sleeping:.
 
+-Si tras haber lanzado la creación de la imagen en Windows, no se consigue hacer y salta este error:
+```console
+Step 1/11 : FROM registry.access.redhat.com/ubi8/ubi-minimal:8.3
+8.3: Pulling from ubi8/ubi-minimal
+no matching manifest for windows/amd64 10.0.18363 in the manifest list entries
+```
+Abre el tray del Dockers y comprueba que estás en el container de Linux.
+
+| <img src="../resources/Linux.png"> |
+
 - Una vez que termine el proceso, podemos comprobar que la imagen se ha creado bien y su tamaño ejecutando:
 ```console
 docker images

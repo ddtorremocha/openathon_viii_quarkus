@@ -70,6 +70,10 @@ Que en nuestro caso resulta en un consumo de:
 
 - Podemos comprobar que nuestra imagen está ejecutando correctamente si invocando por consola devuelve el mensaje esperado. Si aún tenemos stats en ejecución, comprobaremos que el uso de memoria se ha incrementado tras la primera invocación. 
 
+```console
+curl -w "\n" http://localhost:8080/helloOpenathon
+```
+
 | <img src="../resources/img03.png"> |
 
 

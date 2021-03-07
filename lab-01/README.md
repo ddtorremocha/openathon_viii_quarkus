@@ -215,10 +215,10 @@ Vamos a empaquetar y ejecutar la aplicación directamente en la JVM, sin utiliza
   ``` 
 
 Que debe producir dos resultados distintos dentro del directorio target de nuestro proyecto:
-  - *getting-started-quarkus-1.0.0-SNAPSHOT*.  Que contiene las clases y recursos del proyecto. 
-  - *getting-started-quarkus-1.0.0-SNAPSHOT-runner.jar*. Un jar autoejecutable con la aplicación.
+  - *openathon-quarkus-1.0.0-SNAPSHOT.jar*.  Que contiene las clases y recursos del proyecto. 
+  - *openathon-quarkus-1.0.0-SNAPSHOT-runner.jar*. Un jar autoejecutable con la aplicación.
 
-- Podríamos ahora ejecutar nuestra aplicación dentro de la JVM de nuestra máquina:
+Podríamos ahora ejecutar nuestra aplicación dentro de la JVM de nuestra máquina:
 ```console
 java -jar target/openathon-quarkus-1.0.0-SNAPSHOT-runner.jar
 ```

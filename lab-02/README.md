@@ -4,7 +4,7 @@
 
 # Openathon VIII QUARKUS - Dockerizando la aplicación
 
-## Creando un proyecto Quarkus
+## Creando un Contenedor para nuestro proyecto Quarkus
 
 Vamos ahora a crear un contenedor y ejecutar la aplicación dentro de un contenedor docker. Para los que lo tenéis olvidado, os recuerdo el magnifico trabajo que hicieron nuestros compañeros hace unos meses en el [Openathon V](https://github.com/Accenture/openathon-2019-docker) dedicado precisamente a Docker.
 

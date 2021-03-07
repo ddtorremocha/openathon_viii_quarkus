@@ -39,7 +39,7 @@ Venga... distraeros un poco, ayudar a nuestros minions a encontrar el camino a Q
 
 <img src="../resources/laberinto.png">
 
-Cuando acabe el proceso, podemos comprobar en el contenedor que se ha descargado una nueva imagen [“quay.io/quarkus/ubi-quarkus-native-image”](https://quay.io/repository/quarkus/ubi-quarkus-native-image?tab=info). Y que en el directorio arget del proyecto hay creado un jar openathon-quarkus-avd-1.0.0-SNAPSHOT-runner nuevo fichero “openathon-quarkus-1.0.0-SNAPSHOT-native-image-source-jar” que contiene la imagen nativa.
+Cuando acabe el proceso, podemos comprobar en el contenedor que se ha descargado una nueva imagen [“quay.io/quarkus/ubi-quarkus-native-image”](https://quay.io/repository/quarkus/ubi-quarkus-native-image?tab=info). Y que en el directorio target del proyecto hay creado un jar openathon-quarkus-avd-1.0.0-SNAPSHOT-runner nuevo fichero “openathon-quarkus-1.0.0-SNAPSHOT-native-image-source-jar” que contiene la imagen nativa.
 
 ## Dockerizando
 

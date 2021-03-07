@@ -14,7 +14,7 @@ Quarkus es un nuevo framework opensource java, desarrollado por Red Hat y orient
 
 Otra característica fundamental de Quarkus es la posibilidad de integrarse con GraalVM (una máquina virtual poliglota que permite la ejecución de diversos lenguajes de programación como Java, Javascript, Python…), para permitir la nativa compilación de las aplicaciones. La compilación nativa nos permite eliminar en el momento de la ejecución la máquina virtual y llegar directamente a la API del sistema operativo, ganando con ello un incremento dramático de la eficiencia de las aplicaciones en términos de consumo de recursos y rendimiento. Esta capacidad de integración de Quarkus y GraaVM, es una ventaja crítica frente a los frameworks previamente existentes (¿Oyes eso Spring Boot?).
 
-Quarkus está definido como ***SUPERSONIC SUBATOMIC JAVA***, ¿porqué?
+Quarkus está definido como ***SUPERSONIC SUBATOMIC JAVA***, ¿Por qué?
 - **SUPERSONIC**
   - Está diseñado para ser rápida y fácilmente asimilado para los programadores con experiencia previa con java y su integración con los frameworks más populares, permiten que aprovechemos nuestros conocimientos previos.
   - Está diseñado para facilitar el desarrollo de aplicaciones, disponiendo automáticamente de un entorno de prueba que nos permite la modificación en caliente de nuestro código.

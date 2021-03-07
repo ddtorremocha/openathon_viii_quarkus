@@ -74,7 +74,7 @@ Vamos a comprobar que se encuentra dentro del proyecto:
 	Este dockerfile “fast” es un nuevo formato (a partir de Quarkus 1.5) de containerización que quiere conseguir mejoras de rendimiento y que en el futuro se debería convertir en el estándar. 
   - Los ficheros de configuración y propiedades de la aplicación.
 
-- Podemos ahora abrir el proyecto con nuestro IDE favorito. Nosotros utilizar Visual Studio Code, pero podéis utilizar el que queráis o incluso directamente el notepad.
+- Podemos ahora abrir el proyecto con nuestro IDE favorito. Nosotros vamos a utilizar Visual Studio Code, pero podéis utilizar el que queráis o incluso directamente el notepad.
 
 - Vamos a revisar en el pom.xml, que contiene información sobre el proyecto, sus dependencias, fuentes, test, plugins, etc, las dos dependencias directas que se han añadido respecto a Quarkus:
   - quarkus-maven-plugin. Responsable del empaquetado de la aplicación y de la creación de un entorno completo de desarrollo que nos permitirá probar nuestra aplicación y realizar cambios en caliente.

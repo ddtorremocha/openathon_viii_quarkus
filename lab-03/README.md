@@ -23,10 +23,14 @@ Mandrel deriva de la GraalVM Community Edition y su objetivo es proporcionar una
 Vamos a ello. Quarkus nos proporciona una manera muy sencilla de crear el ejecutable nativo linux de nuestra aplicación. Para hacerlo utiliza el runtime de contenedores, en nuestro caso Docker, descargando una imagen especialmente preparada para ello, que provee la native-image.
 
 - Ejecutamos.
+*Windows*
 ```console
 mvnw package -Pnative -Dquarkus.native.container-build=true -Dquarkus.container-image.build=true
 ```
-La instrucción se compone de:
+*Linux*
+```console
+./mvnw package -Pnative -Dquarkus.native.container-build=true -Dquarkus.container-image.build=true
+```La instrucción se compone de:
 | Instrucción | Significado |
 | ------------- | ------------- |
 | mvnw  | invocación a maven |

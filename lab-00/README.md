@@ -38,6 +38,19 @@ Para realizar las actividades, necesitamos comprobar que la máquina donde vamos
 - [Opcional] Un IDE que nos facilite el trabajo. En nuestro caso hemos utilizado [Visual Studio Code](https://code.visualstudio.com/), pero cualquier otro sería valido o incluso no usar ninguno y realizar todas las actividades con el Notepad, textEdit, Vim…
 - [Docker](https://www.docker.com/) u otro gestor de contenedores.
 
+## Alternativas para la ejecución del laboratorio en un pc windows
+
+|   | Alternativa | Pros | Contras |
+| --- | --- | --- | --- |
+| 1 | Windows + Docker Desktop | Si es tu herramienta de trabajo habitual es comodo | Limitaciones de espacio, puede haber incompatibilidades con software instalado |
+| 2 | Docker Play | No requiere de instalacion en local ni espacio adicional, es un linux en la nube| Montar el entorno cada vez que se accede, puede haber algun cuello de botella si hay mucha gente conectada   |
+| 3 | Linux Virtualizado (VirtualBox, VMWAre, etc) | Aisla la instalación de herramientas y actua como una sandbox. Es una manera de entrar al mundo Linux / linea de comandos si no lo has hecho nunca | Limitaciones de espacio, puede requerir 10-15GB libres  |
+
+Para la alternativa de Linux virtualizado hemos realizado un par de documentos que explican la instalación paso a paso de un Xubuntu 20.04 sobre Oracle VM VirtualBox y tambien la preparacion del entorno de desarrollo necesario para el Openathon.
+
+ - [XubuntuVirtualBoxInstallation.pdf](../resources/XubuntuVirtualBoxInstallation.pdf),  instalación de Xubuntu con Virtual Box paso a paso
+ - [XubuntuVirtualBoxDevEnv.pdf](../resources/), instalación de herramientas de desarrollo en Xubuntu, JVM, docker, maven, git y vscode para el openathon 
+
 [< Introduccion](../README.md) | [Lab 01>](../lab-01) 
 
 <p align="center">

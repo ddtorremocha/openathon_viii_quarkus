@@ -50,7 +50,7 @@ Para realizar las actividades, necesitamos comprobar que la máquina donde vamos
 Para la alternativa de Linux virtualizado hemos realizado un par de documentos que explican la instalación paso a paso de un Xubuntu 20.04 sobre Oracle VM VirtualBox y tambien la preparacion del entorno de desarrollo necesario para el Openathon.
 
  - [XubuntuVirtualBoxInstallation.pdf](../resources/XubuntuVirtualBoxInstallation.pdf),  instalación de Xubuntu con Virtual Box paso a paso
- - [XubuntuVirtualBoxDevEnv.pdf](../resources/), instalación de herramientas de desarrollo en Xubuntu, JVM, docker, maven, git y vscode para el openathon 
+ - [XubuntuVirtualBoxDevEnv.pdf](../resources/XubuntuVirtualBoxDevEnv.pdf), instalación de herramientas de desarrollo en Xubuntu, JVM, docker, maven, git y vscode para el openathon 
 
 [< Introduccion](../README.md) | [Lab 01>](../lab-01) 
 

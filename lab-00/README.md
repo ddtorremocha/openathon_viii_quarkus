@@ -44,7 +44,8 @@ Para realizar las actividades, necesitamos comprobar que la máquina donde vamos
 | --- | --- | --- | --- |
 | 1 | Windows + Docker Desktop | Si es tu herramienta de trabajo habitual es comodo | Limitaciones de espacio, puede haber incompatibilidades con software instalado |
 | 2 | Docker Play | No requiere de instalacion en local ni espacio adicional, es un linux en la nube| Montar el entorno cada vez que se accede, puede haber algun cuello de botella si hay mucha gente conectada   |
-| 3 | Linux Virtualizado (VirtualBox, VMWAre, etc) | Aisla la instalación de herramientas y actua como una sandbox. Es una manera de entrar al mundo Linux / linea de comandos si no lo has hecho nunca | Limitaciones de espacio, puede requerir 10-15GB libres  |
+| 3 | Linux Virtualizado (VirtualBox, VMWAre, etc) | Aisla la instalación de herramientas y actua como una sandbox. Es una manera de entrar al mundo Linux / linea de comandos si no lo has hecho nunca | Limitaciones de espacio, puede requerir 15-20GB libres  |
+| 4 | Mac o Linux Workstation| Si es tu herramienta de trabajo habitual es comodo | Puede haber incompatibilidades con software instalado |
 
 Para la alternativa de Linux virtualizado hemos realizado un par de documentos que explican la instalación paso a paso de un Xubuntu 20.04 sobre Oracle VM VirtualBox y tambien la preparacion del entorno de desarrollo necesario para el Openathon.
 

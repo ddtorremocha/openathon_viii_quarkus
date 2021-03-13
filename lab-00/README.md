@@ -38,7 +38,7 @@ Para realizar las actividades, necesitamos comprobar que la máquina donde vamos
 - [Opcional] Un IDE que nos facilite el trabajo. En nuestro caso hemos utilizado [Visual Studio Code](https://code.visualstudio.com/), pero cualquier otro sería valido o incluso no usar ninguno y realizar todas las actividades con el Notepad, textEdit, Vim…
 - [Docker](https://www.docker.com/) u otro gestor de contenedores.
 
-***Nota:** Si nos decantamos por utilizar Docker como gestor de contenedores, hay que comprobar que el Pulse Secure instalado en el pc sea una versión igual o superior a 9.1, ya que existe una incompatibilidad con versiones inferiores entre Docker y Pulse Secure que provoca la desactivación de Wifi en el pc.*
+***Nota:** Si nos decantamos por utilizar Docker como gestor de contenedores, hay que comprobar que el Pulse Secure instalado en el pc sea una versión igual o superior a 9.1, ya que existe una incompatibilidad con versiones inferiores entre Docker y Pulse Secure que provoca la desactivación de Wifi en el pc. [Reinstalar_PulseSecure.pdf](../resources/Reinstalar_PulseSecure.pdf), manual reinstalación Pulse Secure*
 
 ## Alternativas para la ejecución del laboratorio en un pc windows
 

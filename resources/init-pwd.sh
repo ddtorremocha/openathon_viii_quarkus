@@ -13,7 +13,7 @@ wget https://repo.spring.io/release/org/springframework/boot/spring-boot-cli/2.4
 tar -zxf spring-boot-cli-2.4.3-bin.tar.gz
 rm -rf spring-boot-cli-2.4.3-bin.tar.gz
 
-export PATH=$HOME/spring-2.4.3/bin/spring:$PATH
+export PATH=$HOME/spring-2.4.3/bin:$PATH
 
 # Ejemplo de uso:
 # Creamos una aplicación Spring Boot con la dependencia web

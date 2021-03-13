@@ -1,4 +1,5 @@
 #! /bin/bash
+
 apk add openjdk11 maven
 export JAVA_HOME=/usr/lib/jvm/default-jvm
 
@@ -17,3 +18,5 @@ tar -zxf spring-boot-cli-2.4.3-bin.tar.gz
 
 kill -9 $(pidof sshd)
 /usr/sbin/sshd -o AllowTcpForwarding=yes -o PermitRootLogin=yes
+
+echo "Welcome to Openathon VIII! :)"

@@ -162,7 +162,10 @@ A modo de ejemplo y ver que todo funciona correctamente compilaremos el proyecto
 mvn -f my-project/pom.xml package
 
 # Lanzamos la aplicación indicando el puerto RMI 49152
-java -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=49152 -Dcom.sun.management.jmxremote.rmi.port=49152 -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.local.only=false -jar my-project/target/my-project-0.0.1-SNAPSHOT.jar 1> /dev/null &
+export RMI_PORT=49152
+export JMX_OPTIONS="-Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=$RMI_PORT -Dcom.sun.management.jmxremote.rmi.port=$RMI_PORT -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.local.only=false"
+
+java $JMX_OPTIONS -jar my-project/target/my-project-0.0.1-SNAPSHOT.jar 1> /dev/null &
 ```
 
 En la página de PWD nos copiamos el HOSTNAME y ejecutamos en una terminal local  el comando ssh para redirigir el tráfico:

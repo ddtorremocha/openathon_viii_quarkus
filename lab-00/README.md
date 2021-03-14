@@ -54,6 +54,139 @@ Para la alternativa de Linux virtualizado hemos realizado un par de documentos q
  - [XubuntuVirtualBoxInstallation.pdf](../resources/XubuntuVirtualBoxInstallation.pdf),  instalación de Xubuntu con Virtual Box paso a paso
  - [XubuntuVirtualBoxDevEnv.pdf](../resources/XubuntuVirtualBoxDevEnv.pdf), instalación de herramientas de desarrollo en Xubuntu, JVM, docker, maven, git y vscode para el openathon 
 
+
+
+### Play with Docker (PWD)
+
+Play with Docker es una plataforma web que nos permite trabajar con maquina linux con Docker instalado (mirar el siguiente [enlace](https://github.com/Accenture/openathon-2019-docker/tree/master/lab-00) para más información e instalación inicial). 
+
+> :warning:En nuestra máquina local tenemos que tener Java instalado. Ademas, se recomienda, si se usa Windows, tener Putty u otro cliente ssh para conectarnos a la máquina remota.
+
+Os vamos a dejar dos opciones, una que consiste en la ejecución de un script que hemos creado y otra ir paso a paso, instalando cada una de las herramientas:
+
+1. 
+2. 
+
+#### Ejecución de script
+
+En script se encuentra en el siguiente [enlace](../resources/init-pwd.sh). Tenemos que descargar el script en la maquina de PWD y ejecutarlo con *source* (para mantener las variables de entorno):
+
+```sh
+wget https://raw.githubusercontent.com/ddtorremocha/openathon_viii_quarkus/main/resources/init-pwd.sh -O init-pwd.sh
+
+source init-pwd.sh
+```
+
+El script lanza un proceso java de ejemplo para validar la instalación y la monitorización remota. Por lo que en la página de PWD nos copiamos el HOSTNAME y ejecutamos en una terminal local  el comando ssh para redirigir el tráfico:
+
+```sh
+ssh -L 49152:localhost:49152 ip172-18-0-9-c16hd3gh550g00epucvg@direct.labs.play-with-docker.com
+```
+
+Ahora en otra terminal local ejecutaremos *jconsole* para comprobar la monitorización remota del proceso java que hemos lanzado:
+
+```sh
+$JAVA_HOME/bin/jconsole
+```
+
+Si todo está correcto veremos la gráficas de monitorización del proceso java remoto.
+
+Ahora matamos el proceso java ejecutando el siguiente comando:
+
+```sh
+pkill java
+```
+
+#### Instalación paso a paso
+
+Ahora vamos a realizar los pasos necesarios para dejar la máquina configurada para los laboratorios:
+
+##### Instalar OpenJDK11 y Maven3
+
+El primer paso es instalar OpenJDK11 y Maven3, para depués crear la variable de entorno *JAVA_HOME*:
+
+```sh
+apk add openjdk11 maven
+export JAVA_HOME=/usr/lib/jvm/default-jvm
+```
+
+[^1]: usamos apk porque la máquina es un Alphine Linux
+
+Ejecutamos los siguientes comandos para validar la instalación:
+
+```sh
+java --version
+mvn --version
+```
+
+##### Instalar Spring-Boot-CLI
+
+El siguiente paso es instalar el cli de spring boot para inicializar aplicación de spring boot:
+
+```sh
+# Descomprimimos el tar. Crea la carpeta spring-2.4.3
+tar -zxf spring-boot-cli-2.4.3-bin.tar.gz
+rm -rf spring-boot-cli-2.4.3-bin.tar.gz
+mv spring-2.4.3 /opt
+
+export PATH=/opt/spring-2.4.3/bin:$PATH
+
+# Ejemplo de uso:
+# Creamos una aplicación Spring Boot con la dependencia web
+spring init --dependencies=web my-project
+```
+
+##### Modificar sshd
+
+Para poder monitorizar los procesos Java que lancemos en la máquina de Play With Docker, nos vamos a conectar por ssh desde nuestra máquina local a la remota y hacer una redirección de puertos (opción  *AllowTcpForwarding=yes*). Para ello, vamos a matar el proceso *sshd*, y ejecutarlo indicandole las opciones necesarias:
+
+```sh
+kill -9 $(pidof sshd)
+/usr/sbin/sshd -o AllowTcpForwarding=yes -o PermitRootLogin=yes
+```
+
+Ahora desde nuestra máquina local, podemos ejecutar el siguiente comando, para redirigir todo el tráfico que en nuestra máquina vaya por un determinado puerto: 
+
+```sh
+ssh -L <RMI_PORT>:localhost:<RMI_PORT> <HOST_MAQUINA_PWD>
+```
+
+[^1]: El puerto será el que indiquemos a JMX cuando lancemos los procesos.
+
+##### Testing
+
+A modo de ejemplo y ver que todo funciona correctamente compilaremos el proyecto generado con *spring-cli* y monitorizaremos el proceso java desde nuestra máquina local:
+
+```sh
+# Generamos el jar
+mvn -f my-project/pom.xml package
+
+# Lanzamos la aplicación indicando el puerto RMI 49152
+java -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=49152 -Dcom.sun.management.jmxremote.rmi.port=49152 -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.local.only=false -jar my-project/target/my-project-0.0.1-SNAPSHOT.jar 1> /dev/null &
+```
+
+En la página de PWD nos copiamos el HOSTNAME y ejecutamos en una terminal local  el comando ssh para redirigir el tráfico:
+
+```sh
+ssh -L 49152:localhost:49152 ip172-18-0-9-c16hd3gh550g00epucvg@direct.labs.play-with-docker.com
+```
+
+Ahora en otra terminal ejecutaremos *jconsole* para comprobar la monitorización remota del proceso java que hemos lanzado:
+
+```sh
+$JAVA_HOME/bin/jconsole
+```
+
+Si todo está correcto veremos la gráficas de monitorización del proceso java remoto.
+
+Ahora matamos el proceso java ejecutando el siguiente comando:
+
+```sh
+pkill java
+```
+
+
+
 [< Introduccion](../README.md) | [Lab 01>](../lab-01) 
 
 <p align="center">

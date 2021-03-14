@@ -77,7 +77,7 @@ wget https://raw.githubusercontent.com/ddtorremocha/openathon_viii_quarkus/main/
 source init-pwd.sh
 ```
 
-El script lanza un proceso java de ejemplo para validar la instalación y la monitorización remota. Por lo que en la página de PWD nos copiamos el HOSTNAME y ejecutamos en una terminal local  el comando ssh para redirigir el tráfico:
+El script lanza un proceso java de ejemplo para validar la instalación y la monitorización remota (haciendo uso de dos variables de entorno **RMI_PORT** y **JMX_OPTIONS** las cuales podeis usar para lanzar los jar en los siguientes laboratorios). Por lo que en la página de PWD nos copiamos el HOSTNAME y ejecutamos en una terminal local  el comando ssh para redirigir el tráfico:
 
 ```sh
 ssh -L 49152:localhost:49152 ip172-18-0-9-c16hd3gh550g00epucvg@direct.labs.play-with-docker.com
@@ -155,7 +155,7 @@ ssh -L <RMI_PORT>:localhost:<RMI_PORT> <HOST_MAQUINA_PWD>
 
 ##### Testing
 
-A modo de ejemplo y ver que todo funciona correctamente compilaremos el proyecto generado con *spring-cli* y monitorizaremos el proceso java desde nuestra máquina local:
+A modo de ejemplo y ver que todo funciona correctamente compilaremos el proyecto generado con *spring-cli* y monitorizaremos el proceso java desde nuestra máquina local, haciendo uso de dos variables de entorno **RMI_PORT** y **JMX_OPTIONS** las cuales podeis usar para lanzar los jar en los siguientes laboratorios:
 
 ```sh
 # Generamos el jar

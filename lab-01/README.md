@@ -219,8 +219,15 @@ Que debe producir dos resultados distintos dentro del directorio target de nuest
   - *openathon-quarkus-1.0.0-SNAPSHOT-runner.jar*. Un jar autoejecutable con la aplicación.
 
 Podríamos ahora ejecutar nuestra aplicación dentro de la JVM de nuestra máquina:
+
+*Máquina propia*
 ```console
 java -jar target/openathon-quarkus-1.0.0-SNAPSHOT-runner.jar
+```
+*PWD*
+```sh
+# El puerto RMI será 49152 (cambiar la variable con export RMI_PORT=<value>, si lo deseais cambiar)
+java $JMX_OPTIONS -jar target/openathon-quarkus-1.0.0-SNAPSHOT-runner.jar
 ```
 
 - Y ejecutarla de la manera habitual:
@@ -239,6 +246,8 @@ Lo que nos debería abrir una nueva ventana:
 <img src="../resources/img08.png" width="700"> 
 
 En esta nueva ventana, dentro de los "Local Process" podremos localizar y seleccionar el que queremos monitorizar, en este caso "openathon-quarkus-1.0.0-SNAPSHOT-runner.jar" y pulsar "Connect".
+
+> ⚠️ 🐳 Si estais usando PWD, sería *Remote Process* e indicar localhost:<RMI_PORT> que por defecto es 49152
 
 
 En nuestro caso el análisis de la JVM resulta en:

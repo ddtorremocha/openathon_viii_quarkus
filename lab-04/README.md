@@ -75,8 +75,16 @@ mvnw clean package
 ```
 
 - Podríamos activar la aplicación ahora usando:
+
+*Máquina propia*
 ```console
 java -jar target/demo-0.0.1-SNAPSHOT.jar
+```
+
+*PWD*
+```sh
+# El puerto RMI será 49152 (cambiar la variable con export RMI_PORT=<value>, si lo deseais cambiar)
+java $JMX_OPTIONS -jar target/demo-0.0.1-SNAPSHOT.jar
 ```
 
 - Y ejecutarla de la misma manera 

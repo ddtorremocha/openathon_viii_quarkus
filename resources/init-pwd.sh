@@ -23,7 +23,10 @@ spring init --dependencies=web my-project
 # Generamos el jar
 mvn -f my-project/pom.xml package
 
-java -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=49152 -Dcom.sun.management.jmxremote.rmi.port=49152 -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.local.only=false -jar my-project/target/my-project-0.0.1-SNAPSHOT.jar 1> /dev/null &
+export RMI_PORT=49152
+export JMX_OPTIONS="-Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=$RMI_PORT -Dcom.sun.management.jmxremote.rmi.port=$RMI_PORT -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.local.only=false"
+
+java $JMX_OPTIONS -jar my-project/target/my-project-0.0.1-SNAPSHOT.jar 1> /dev/null &
 
 kill -9 $(pidof sshd)
 /usr/sbin/sshd -o AllowTcpForwarding=yes -o PermitRootLogin=yes
@@ -31,7 +34,7 @@ kill -9 $(pidof sshd)
 echo "##################################################################################################################"
 echo "# Welcome to Openathon VIII! :)                                                                                  #"
 echo "# Ejecuta en tu equipo local: ssh -L 49152:localhost:49152 <HOSTNAME_PWD>@direct.labs.play-with-docker.com       #"
-echo "# Ejecuta en tu equipo local: \$JAVA_HOME/bin/jconsole en tu equipo local he indica localhost:49152.             #"
+echo "# Ejecuta en tu equipo local: \$JAVA_HOME/bin/jconsole he indica localhost:49152                                 #"
 echo "# Verás el proceso que acaba de lanzar el script                                                                 #"
 echo "# Ejecuta en PWD 'pkill java' para matar el proceso que hemos lanzado                                            #"
 echo "# The Openathon Team                                                                                             #"

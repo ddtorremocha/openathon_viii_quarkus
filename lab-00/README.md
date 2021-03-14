@@ -60,12 +60,12 @@ Para la alternativa de Linux virtualizado hemos realizado un par de documentos q
 
 Play with Docker es una plataforma web que nos permite trabajar con maquina linux con Docker instalado (mirar el siguiente [enlace](https://github.com/Accenture/openathon-2019-docker/tree/master/lab-00) para más información e instalación inicial). 
 
-> :warning:En nuestra máquina local tenemos que tener Java instalado. Ademas, se recomienda, si se usa Windows, tener Putty u otro cliente ssh para conectarnos a la máquina remota.
+> :warning: En nuestra máquina local tenemos que tener Java instalado. Ademas, se recomienda, si se usa Windows, tener Putty u otro cliente ssh para conectarnos a la máquina remota.
 
 Os vamos a dejar dos opciones, una que consiste en la ejecución de un script que hemos creado y otra ir paso a paso, instalando cada una de las herramientas:
 
-1. 
-2. 
+1. [Ejecución de script](#ejecución-de-script)
+2. [Instalación paso a paso](#instalación-paso-a-paso)
 
 #### Ejecución de script
 

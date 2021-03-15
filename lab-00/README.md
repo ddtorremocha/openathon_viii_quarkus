@@ -6,13 +6,13 @@
 
 ## Primer vistazo a Quarkus
 
-Actualmente hemos pasado de aplicaciones monolíticas donde grandes servidores con grandes capacidades para procesar atendían múltiples peticiones al mismo tiempo a aplicaciones donde se crean y se destruyen pequeños servidores basados en la nube o incluso funciones serverless para procesar las peticiones, atender picos de demanda o incluso una determinada petición. En este nuevo enfoque, java parte en desventaja, ya que el consumo de recursos y el tiempo de arranque de las JVM era inadecuado para este tipo de soluciones, donde sería necesario que un servicio se arrancase y estuviese disponible en microsegundos y que su consumo de recursos fuese el menor posible para permitir convivir al mayor número de ellos. 
+En los últimos años hemos ido pasando de aplicaciones monolíticas, donde grandes servidores con grandes capacidades atendían muchas peticiones al mismo tiempo, a soluciones donde se crean y se destruyen rapidamente pequeños servidores basados en la nube o incluso donde se usan funciones serverless para procesar las peticiones, atender picos de demanda o incluso una determinada petición. En este nuevo enfoque, java partía en desventaja, ya que el consumo de recursos y el tiempo de arranque de las JVM era inadecuado para este tipo de soluciones, donde es necesario que cualquier servicio se arrancase y estuviese disponible en microsegundos y que su consumo de recursos fuese el menor posible para permitir convivir al mayor número de ellos. 
 
-Esta es la principal causa por la que hemos visto en estos últimos años crecer otros lenguajes. Quarkus viene a responder a esta necesidad, permitiendo la creación de aplicaciones java con un tiempo de arranque mínimo y un tiempo de disponibilidad inmediato.
+Esta es una de las causas por la que hemos visto en estos últimos años crecer otros lenguajes. Quarkus junto con GraalVM vienen a solucionar esta desventaja, permitiendo la creación de aplicaciones java con un tiempo de arranque mínimo y un tiempo de disponibilidad inmediato.
 
 Quarkus es un nuevo framework opensource java, desarrollado por Red Hat y orientado a una ejecución optimizada en entornos de sin servidor, cloud y kubernetes. Está diseñado para funcionar con las librerías y frameworks más populares, tales como Eclipse Microprofile, Spring, Apache Kafka, RESTEasy (JAX-RS), Hibernate ORM (JPA), Spring Infinispan, Camel y muchos otros.
 
-Otra característica fundamental de Quarkus es la posibilidad de integrarse con GraalVM (una máquina virtual poliglota que permite la ejecución de diversos lenguajes de programación como Java, Javascript, Python…), para permitir la nativa compilación de las aplicaciones. La compilación nativa nos permite eliminar en el momento de la ejecución la máquina virtual y llegar directamente a la API del sistema operativo, ganando con ello un incremento dramático de la eficiencia de las aplicaciones en términos de consumo de recursos y rendimiento. Esta capacidad de integración de Quarkus y GraaVM, es una ventaja crítica frente a los frameworks previamente existentes (¿Oyes eso Spring Boot?).
+Una característica fundamental de Quarkus es la posibilidad de integrarse con GraalVM (una máquina virtual poliglota que permite la ejecución de diversos lenguajes de programación como Java, Javascript, Python…), para permitir la nativa compilación de las aplicaciones. La compilación nativa nos permite en el momento de la ejecución, eliminar la máquina virtual y llegar directamente a la API del sistema operativo, ganando con ello un incremento muy importante de la eficiencia de las aplicaciones, en términos de consumo de recursos y rendimiento. Esta capacidad de integración de Quarkus y GraaVM, es una ventaja crítica frente a los frameworks previamente existentes (¿Oyes eso Spring Boot?).
 
 Quarkus está definido como ***SUPERSONIC SUBATOMIC JAVA***, ¿Por qué?
 - **SUPERSONIC**
@@ -42,12 +42,14 @@ Para realizar las actividades, necesitamos comprobar que la máquina donde vamos
 
 ## Alternativas para la ejecución del laboratorio en un pc windows
 
+Previendo que los participantes podemos tener problemas para cumplir los requisitos especificados, hemos preparado cuatro posibles formas de realizar los laboratorios. Cada uno debe decidir cual es la que le resulta más adecuada:
+
 |   | Alternativa | Pros | Contras |
 | --- | --- | --- | --- |
-| 1 | Windows + Docker Desktop | Si es tu herramienta de trabajo habitual es comodo | Limitaciones de espacio, puede haber incompatibilidades con software instalado |
-| 2 | Docker Play | No requiere de instalacion en local ni espacio adicional, es un linux en la nube| Montar el entorno cada vez que se accede, puede haber algun cuello de botella si hay mucha gente conectada   |
-| 3 | Linux Virtualizado (VirtualBox, VMWAre, etc) | Aisla la instalación de herramientas y actua como una sandbox. Es una manera de entrar al mundo Linux / linea de comandos si no lo has hecho nunca | Limitaciones de espacio, puede requerir 15-20GB libres  |
-| 4 | Mac o Linux Workstation| Si es tu herramienta de trabajo habitual es comodo | Puede haber incompatibilidades con software instalado |
+| 1 | Windows + Docker Desktop | Si es tu herramienta de trabajo habitual es cómodo. | Limitaciones de espacio, puede haber incompatibilidades con software instalado (ver nota del punto anterior) |
+| 2 | Play with Docker | No requiere de instalacion en local ni espacio adicional, es un linux en la nube| Montar el entorno cada vez que se accede, puede haber algun cuello de botella si hay mucha gente conectada simultaneamente. |
+| 3 | Linux Virtualizado (VirtualBox, VMWAre, etc) | Aisla la instalación de herramientas y actua como una sandbox. Es una manera de entrar al mundo Linux / linea de comandos si no lo has hecho nunca. | Limitaciones de espacio, puede requerir 15-20GB libres.  |
+| 4 | Mac o Linux Workstation| Si es tu herramienta de trabajo habitual es cómodo. | Puede haber incompatibilidades con software instalado. |
 
 Para la alternativa de Linux virtualizado hemos realizado un par de documentos que explican la instalación paso a paso de un Xubuntu 20.04 sobre Oracle VM VirtualBox y tambien la preparacion del entorno de desarrollo necesario para el Openathon.
 

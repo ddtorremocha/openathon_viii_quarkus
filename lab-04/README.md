@@ -47,13 +47,25 @@ public class GreetingController {
 ```
 
 - Compilamos
+
+Windows
 ```console
 mvnw compile
 ```
+Linux
+```sh
+./mvnw compile
+```
 
-- Comprobamos que la aplicación funciona correctamente.
+- Comprobamos que la aplicación funciona correctamente
+
+Windows
 ```console
 mvnw spring-boot:run
+```
+Linux
+```sh
+./mvnw spring-boot:run
 ```
 
 Tenemos que tener cuidado de hacerlo cuando no esté cargado el contenedor de Quarkus puesto que si no lógicamente el puerto 8080 estará ocupado. También podemos cambiar el puerto por defecto, incorporando en el fichero application.properties de la aplicación:

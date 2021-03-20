@@ -28,6 +28,10 @@ export JMX_OPTIONS="-Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.managemen
 
 java $JMX_OPTIONS -jar my-project/target/my-project-0.0.1-SNAPSHOT.jar 1> /dev/null &
 
+# Reiniciar sshd para que nos permita hacer port forwarding y poder monitorizar el proceso java
+kill -9 $(pidof sshd)
+/usr/sbin/sshd -o AllowTcpForwarding=yes -o PermitRootLogin=yes
+
 echo "##################################################################################################################"
 echo "# Welcome to Openathon VIII! :)                                                                                  #"
 echo "# Ejecuta en tu equipo local: ssh -L 49152:localhost:49152 <HOSTNAME_PWD>@direct.labs.play-with-docker.com       #"

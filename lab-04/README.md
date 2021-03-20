@@ -88,21 +88,27 @@ curl -w "\n" http://localhost:8081/helloOpenathonS
 Vamos ahora a empaquetar la aplicación para poder ejecutarla de manera stand-alone.
 
 - Empaquetamos la aplicación para poder ejecutarla de manera independiente:
+
+Windows
 ```console
 mvnw clean package
+```
+Linux:
+```sh
+./mvnw clean package
 ```
 
 - Podríamos activar la aplicación ahora usando:
 
 *Máquina propia*
 ```console
-java -jar target/demo-0.0.1-SNAPSHOT.jar
+java -jar target/<nombre-proyecto>-0.0.1-SNAPSHOT.jar
 ```
 
 *PWD*
 ```sh
 # El puerto RMI será 49152 (cambiar la variable con export RMI_PORT=<value>, si lo deseais cambiar)
-java $JMX_OPTIONS -jar target/demo-0.0.1-SNAPSHOT.jar
+java $JMX_OPTIONS -jar target/<nombre-proyecto>-0.0.1-SNAPSHOT.jar
 ```
 
 - Y ejecutarla de la misma manera 

@@ -63,7 +63,8 @@ Para la alternativa de Linux virtualizado hemos realizado un par de documentos q
 Play with Docker es una plataforma web que nos permite trabajar con maquina linux con Docker instalado (mirar el siguiente [enlace](https://github.com/Accenture/openathon-2019-docker/tree/master/lab-00) para más información e instalación inicial). 
 
 > :warning: En nuestra máquina local tenemos que tener Java instalado. Ademas, se recomienda, si se usa Windows, tener Putty u otro cliente ssh para conectarnos a la máquina remota.
-> Para copiar y pegar en la consola web de PWD, hacer Control + Shift + C y Control + Shift + V
+
+> 🐳 Para copiar y pegar en la consola web de PWD, hacer Control + Shift + C y Control + Shift + V
 
 Os vamos a dejar dos opciones, una que consiste en la ejecución de un script que hemos creado y otra ir paso a paso, instalando cada una de las herramientas:
 
@@ -84,6 +85,23 @@ El script lanza un proceso java de ejemplo para validar la instalación y la mon
 ```sh
 ssh -L 49152:localhost:49152 ip172-18-0-9-c16hd3gh550g00epucvg@direct.labs.play-with-docker.com
 ```
+
+Si os sale el siguiente mensaje *Permission denied (publickey)*, teneis que generar un par clave pública-privada. Para ello debemos ejecutar **ssh-keygen**, dejando el nombre del fichero por defecto (**id_rsa**) e indicando opcionalmente una contraseña: 
+```sh
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/josdev27/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /Users/josdev27/.ssh/id_rsa.
+Your public key has been saved in /Users/j.carrasco.galiano/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:CmQzDINAyM78bKm1ljFgVN3NMbttXmExnFaci5pkftk josdev27@pc
+The key's randomart image is:
+...
+```
+
+> 🐳 Si indicais otro nombre de fichero que no sea el de por defecto, cuando hagais *ssh* teneis que indicar la opción *-i <nombre-fichero>*
 
 Ahora en otra terminal local ejecutaremos *jconsole* para comprobar la monitorización remota del proceso java que hemos lanzado:
 

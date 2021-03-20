@@ -18,6 +18,8 @@ Vamos a ir rápido, lo importante es tener la aplicación funcionando cuanto ant
 
 - Abrimos el proyecto con nuestro IDE y lo modificamos para añadirle el controlador necesario para responder las peticiones HTTP. Para ello creamos la clase GreetingControler.
 
+> 🐳 En PWD, tenemos tres opciones. Podemos hacer uso del editor de ficheros online de la web, usar *vi*, o bien, modificarlos en local y subirlos con *scp*
+
 ```java
 package com.example.demo;
 

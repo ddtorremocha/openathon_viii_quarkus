@@ -84,15 +84,19 @@ wget https://raw.githubusercontent.com/ddtorremocha/openathon_viii_quarkus/main/
 source init-pwd.sh
 ```
 
-El script lanza un proceso java de ejemplo para validar la instalación y la monitorización remota (haciendo uso de dos variables de entorno **RMI_PORT** y **JMX_OPTIONS** las cuales podeis usar para lanzar los jar en los siguientes laboratorios). Por lo que en la página de PWD nos copiamos el HOSTNAME y ejecutamos en una terminal local  el comando ssh para redirigir el tráfico:
+El script lanza un proceso java de ejemplo para validar la instalación y la monitorización remota (haciendo uso de dos variables de entorno **RMI_PORT** y **JMX_OPTIONS** las cuales podeis usar para lanzar los jar en los siguientes laboratorios). Por lo que en la página de PWD nos copiamos el HOSTNAME:
 
 <p align="center">
     <img src="../resources/ssh_pwd.png">
 </p>
 
+Y ejecutamos en una terminal local el comando ssh para redirigir el tráfico:
+
 ```sh
-ssh -L 49152:localhost:49152 ip172-18-0-9-c16hd3gh550g00epucvg@direct.labs.play-with-docker.com
+ssh -L 49152:localhost:49152 <PWD_HOST>
 ```
+
+Si todo va bien obtendremos un resultado similar al siguiente:
 
 <p align="center">
     <img src="../resources/ssh_pwd2.png">
@@ -123,10 +127,15 @@ jconsole
 En la ventana abierta, dentro de *remote process*, indicamos localhost:49152, que es el puerto RMI indicado:
 
 <p align="center">
-    <img src="../resources/ssh_pwd4.PNG">
+    <img src="../resources/ssh_pwd3.png">
 </p>
 
-Si todo está correcto veremos la gráficas de monitorización del proceso java remoto.
+Si todo está correcto veremos la gráficas de monitorización del proceso java remoto:
+
+
+<p align="center">
+    <img src="../resources/ssh_pwd4.PNG">
+</p>
 
 Ahora matamos el proceso java ejecutando el siguiente comando en la terminar conectada a PWD:
 
@@ -205,10 +214,27 @@ export JMX_OPTIONS="-Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.managemen
 java $JMX_OPTIONS -jar my-project/target/my-project-0.0.1-SNAPSHOT.jar 1> /dev/null &
 ```
 
-En la página de PWD nos copiamos el HOSTNAME y ejecutamos en una terminal local  el comando ssh para redirigir el tráfico:
+En la página de PWD nos copiamos el HOSTNAME:
+
+
+<p align="center">
+    <img src="../resources/ssh_pwd.png">
+</p>
+
+Y ejecutamos en una terminal local el comando ssh para redirigir el tráfico:
 
 ```sh
-ssh -L 49152:localhost:49152 ip172-18-0-9-c16hd3gh550g00epucvg@direct.labs.play-with-docker.com
+ssh -L 49152:localhost:49152 <PWD_HOST>
+```
+
+Si todo va bien obtendremos un resultado similar al siguiente:
+
+<p align="center">
+    <img src="../resources/ssh_pwd2.png">
+</p>
+
+```sh
+ssh -L 49152:localhost:49152 <HOST_PWD>
 ```
 
 Si os sale el siguiente mensaje *Permission denied (publickey)*, teneis que generar un par clave pública-privada. Para ello debemos ejecutar **ssh-keygen**, dejando el nombre del fichero por defecto (**id_rsa**) e indicando opcionalmente una contraseña: 
@@ -225,13 +251,24 @@ Your public key has been saved in /Users/josdev27/.ssh/id_rsa.pub.
 
 > 🐳 Si indicais otro nombre de fichero que no sea el de por defecto, cuando hagais *ssh* teneis que indicar la opción *-i <nombre-fichero>*
 
-Ahora en otra terminal ejecutaremos *jconsole* para comprobar la monitorización remota del proceso java que hemos lanzado:
+Ahora en otra terminal local ejecutaremos *jconsole* para comprobar la monitorización remota del proceso java que hemos lanzado:
 
 ```sh
 jconsole
 ```
 
-Si todo está correcto veremos la gráficas de monitorización del proceso java remoto.
+En la ventana abierta, dentro de *remote process*, indicamos localhost:49152, que es el puerto RMI indicado:
+
+<p align="center">
+    <img src="../resources/ssh_pwd3.png">
+</p>
+
+Si todo está correcto veremos la gráficas de monitorización del proceso java remoto:
+
+
+<p align="center">
+    <img src="../resources/ssh_pwd4.PNG">
+</p>
 
 Ahora matamos el proceso java ejecutando el siguiente comando:
 

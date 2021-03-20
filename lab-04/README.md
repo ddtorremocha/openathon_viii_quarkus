@@ -127,6 +127,12 @@ Podemos extraer:
   - Carga en torno a las 6900 clases (contra 4500)
   - Consume en arranque en torno al 3% del procesador y en torno al 0,1% en ejecución.
 
+En el caso de PWD 🐳:
+  - Arranque: unos 4 segundos (1 segundo en el caso de Quarkus).
+  - El consumo de memoria arranca en torno a las 45 megas (en el caso de Quarkus 25 megas).
+  - Carga en torno a las 6900 clases (contra 4500)
+  - Consume en arranque en torno al 0,7% del procesador y en torno al 0,1% en ejecución.
+
 ## Dockerizando la aplicación
 
 - Añadimos un fichero sin extensión, llamado Dockerfile en la raíz del proyecto. (\demo..)

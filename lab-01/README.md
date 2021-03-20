@@ -276,7 +276,7 @@ Una pista:
 -Dextensions=”quarkus-spring-web”
 ```
 
-Acuértate que cambiarle el nombre al proyecto (DprojectArtifactId) que nos conocemos… :smiling_imp:
+Acuértate de cambiarle el nombre al proyecto (DprojectArtifactId) que nos conocemos… :smiling_imp:
 
 [<Lab 00](../lab-00) | [Lab 02>](../lab-02) 
 

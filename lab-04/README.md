@@ -74,6 +74,8 @@ Tenemos que tener cuidado de hacerlo cuando no esté cargado el contenedor de Qu
 server.port=8081
 ~~~
 
+O pasando la opción *-Dserver.port=8081* al mvnw
+
 - Podemos comprobar que funciona:
 ```console
 curl -w "\n" http://localhost:8081/helloOpenathonS

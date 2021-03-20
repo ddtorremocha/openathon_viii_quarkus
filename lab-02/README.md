@@ -81,6 +81,8 @@ curl -w "\n" http://localhost:8080/helloOpenathon
 
 ¿Te animas a hacer lo mismo con el dockerfile.fast-jar?, ¿habrá alguna diferencia?.
 
+> Para poder generar el jar fast, teneis que ejecutar *mvn package -Dquarkus.package.type=fast-jar*
+
 [<Lab 01](../lab-01) | [Lab 03>](../lab-03) 
 
 <p align="center">

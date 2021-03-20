@@ -68,7 +68,9 @@ Para la alternativa de Linux virtualizado hemos realizado un par de documentos q
     1. Un cliente ssh (Git bash por ejemplo).
     2. Java instalado y configurado.
 
-> 🐳 Para copiar y pegar en la consola web de PWD, hacer Control + Shift + C y Control + Shift + V
+> 🐳 Para copiar y pegar en la consola web de PWD, hacer Control + Shift + C y Control + Shift + V.
+
+> 🐳 Con Alt + Enter la consola se pone en pantalla completa, para que os sea más fácil trabajar.
 
 Para configurar la instancia de PWD os vamos a dejar dos opciones, una que consiste en la ejecución de un script que hemos creado y otra ir paso a paso, instalando cada una de las herramientas:
 

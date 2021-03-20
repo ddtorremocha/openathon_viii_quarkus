@@ -58,8 +58,6 @@ Para la alternativa de Linux virtualizado hemos realizado un par de documentos q
  - [XubuntuVirtualBoxInstallation.pdf](../resources/XubuntuVirtualBoxInstallation.pdf),  instalación de Xubuntu con Virtual Box paso a paso
  - [XubuntuVirtualBoxDevEnv.pdf](../resources/XubuntuVirtualBoxDevEnv.pdf), instalación de herramientas de desarrollo en Xubuntu, JVM, docker, maven, git y vscode para el openathon 
 
-
-
 ### Alternativa Zero Config - Play With Docker (PWD) 🐳
 
 [Play with Docker](https://labs.play-with-docker.com/) es una plataforma web que nos permite trabajar con maquina linux con Docker instalado (mirar el siguiente [enlace](https://github.com/Accenture/openathon-2019-docker/tree/master/lab-00) para más información e uso básico). Los requisitos son los siguientes:
@@ -88,9 +86,18 @@ source init-pwd.sh
 
 El script lanza un proceso java de ejemplo para validar la instalación y la monitorización remota (haciendo uso de dos variables de entorno **RMI_PORT** y **JMX_OPTIONS** las cuales podeis usar para lanzar los jar en los siguientes laboratorios). Por lo que en la página de PWD nos copiamos el HOSTNAME y ejecutamos en una terminal local  el comando ssh para redirigir el tráfico:
 
+<p align="center">
+    <img src="../resources/ssh_pwd.png">
+</p>
+
 ```sh
 ssh -L 49152:localhost:49152 ip172-18-0-9-c16hd3gh550g00epucvg@direct.labs.play-with-docker.com
 ```
+
+<p align="center">
+    <img src="../resources/ssh_pwd2.png">
+</p>
+
 
 Si os sale el siguiente mensaje *Permission denied (publickey)*, teneis que generar un par clave pública-privada. Para ello debemos ejecutar **ssh-keygen**, dejando el nombre del fichero por defecto (**id_rsa**) e indicando opcionalmente una contraseña: 
 ```sh
@@ -110,8 +117,14 @@ The key fingerprint is:
 Ahora en otra terminal local ejecutaremos *jconsole* para comprobar la monitorización remota del proceso java que hemos lanzado:
 
 ```sh
-$JAVA_HOME/bin/jconsole
+jconsole
 ```
+
+En la ventana abierta, dentro de *remote process*, indicamos localhost:49152, que es el puerto RMI indicado:
+
+<p align="center">
+    <img src="../resources/ssh_pwd4.PNG">
+</p>
 
 Si todo está correcto veremos la gráficas de monitorización del proceso java remoto.
 
@@ -215,7 +228,7 @@ Your public key has been saved in /Users/josdev27/.ssh/id_rsa.pub.
 Ahora en otra terminal ejecutaremos *jconsole* para comprobar la monitorización remota del proceso java que hemos lanzado:
 
 ```sh
-$JAVA_HOME/bin/jconsole
+jconsole
 ```
 
 Si todo está correcto veremos la gráficas de monitorización del proceso java remoto.

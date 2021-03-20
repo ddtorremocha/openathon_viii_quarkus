@@ -247,7 +247,7 @@ Lo que nos debería abrir una nueva ventana:
 
 En esta nueva ventana, dentro de los "Local Process" podremos localizar y seleccionar el que queremos monitorizar, en este caso "openathon-quarkus-1.0.0-SNAPSHOT-runner.jar" y pulsar "Connect".
 
-> ⚠️ 🐳 Si estais usando PWD, sería *Remote Process* e indicar localhost:<RMI_PORT> que por defecto es 49152
+> ⚠️ 🐳 Si estais usando PWD, sería *Remote Process* e indicar localhost:<RMI_PORT> que por defecto es 49152. Si os sale *Connection failed*, revisad que la terminal con sl ssh -L esta abierta y conectada. Si se ha caido la conexión, ejecutar de nuevo el comando ssh.
 
 
 En nuestro caso el análisis de la JVM resulta en:

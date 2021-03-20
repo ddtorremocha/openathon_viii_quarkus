@@ -62,13 +62,17 @@ Para la alternativa de Linux virtualizado hemos realizado un par de documentos q
 
 ### Alternativa Zero Config - Play With Docker (PWD) 🐳
 
-Play with Docker es una plataforma web que nos permite trabajar con maquina linux con Docker instalado (mirar el siguiente [enlace](https://github.com/Accenture/openathon-2019-docker/tree/master/lab-00) para más información e instalación inicial). 
+[Play with Docker](https://labs.play-with-docker.com/) es una plataforma web que nos permite trabajar con maquina linux con Docker instalado (mirar el siguiente [enlace](https://github.com/Accenture/openathon-2019-docker/tree/master/lab-00) para más información e uso básico). Los requisitos son los siguientes:
 
-> :warning: En nuestra máquina local tenemos que tener Java instalado. Ademas, se recomienda, si se usa Windows, tener Putty u otro cliente ssh para conectarnos a la máquina remota.
+1. Tener un usuario en DockerHub.
+2. Ejecutar un script o los comandos que indicamos a continuación en la instancia de PWD.
+3. En nuestra máquina local:
+    1. Un cliente ssh (Git bash por ejemplo).
+    2. Java instalado y configurado.
 
 > 🐳 Para copiar y pegar en la consola web de PWD, hacer Control + Shift + C y Control + Shift + V
 
-Os vamos a dejar dos opciones, una que consiste en la ejecución de un script que hemos creado y otra ir paso a paso, instalando cada una de las herramientas:
+Para configurar la instancia de PWD os vamos a dejar dos opciones, una que consiste en la ejecución de un script que hemos creado y otra ir paso a paso, instalando cada una de las herramientas:
 
 1. [Ejecución de script](#ejecución-de-script)
 2. [Instalación paso a paso](#instalación-paso-a-paso)

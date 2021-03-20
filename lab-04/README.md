@@ -14,6 +14,8 @@ Vamos a ir rápido, lo importante es tener la aplicación funcionando cuanto ant
 
 - Descargamos un proyecto básico desde [Spring Initializr](https://start.spring.io/). Seleccionamos “Maven Project” en “Project”, añadimos la dependencia “Spring Web” y pulsamos “GENERATE” sin modificar nada más. Obtendremos la estructura de un proyecto con lo necesario para ejecutarlo.
 
+> 🐳 En PWD, ejecutamos el comando **spring init --dependencies=web \<nombre-proyecto\>**
+
 - Abrimos el proyecto con nuestro IDE y lo modificamos para añadirle el controlador necesario para responder las peticiones HTTP. Para ello creamos la clase GreetingControler.
 
 ```java

@@ -194,6 +194,23 @@ En la página de PWD nos copiamos el HOSTNAME y ejecutamos en una terminal local
 ssh -L 49152:localhost:49152 ip172-18-0-9-c16hd3gh550g00epucvg@direct.labs.play-with-docker.com
 ```
 
+Si os sale el siguiente mensaje *Permission denied (publickey)*, teneis que generar un par clave pública-privada. Para ello debemos ejecutar **ssh-keygen**, dejando el nombre del fichero por defecto (**id_rsa**) e indicando opcionalmente una contraseña: 
+```sh
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/josdev27/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /Users/josdev27/.ssh/id_rsa.
+Your public key has been saved in /Users/j.carrasco.galiano/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:CmQzDINAyM78bKm1ljFgVN3NMbttXmExnFaci5pkftk josdev27@pc
+The key's randomart image is:
+...
+```
+
+> 🐳 Si indicais otro nombre de fichero que no sea el de por defecto, cuando hagais *ssh* teneis que indicar la opción *-i <nombre-fichero>*
+
 Ahora en otra terminal ejecutaremos *jconsole* para comprobar la monitorización remota del proceso java que hemos lanzado:
 
 ```sh

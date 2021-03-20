@@ -255,12 +255,17 @@ En nuestro caso el análisis de la JVM resulta en:
 
 De lo que podemos extraer
   - Arranque: unos 3 segundos.
-  - El consumo de memoria arranca en torno a las 20 megas, que escala hasta las 60 en continuas ejecuciones y desciende a 10 en el momento de entrar el Garbage Collector.
-  - Carga en torno a las 4500 clases.
+  - El consumo de memoria arranca en torno a los 20 megas, que escala hasta las 60 en continuas ejecuciones y desciende a 10 en el momento de entrar el Garbage Collector.
+  - Carga en torno a 4500 clases.
   - Consume en arranque en torno al 3% del procesador y en torno al 0,1% en ejecución.
   
 Quedemonos con esos datos, serán relevantes cuando comparemos con Spring Boot.
 
+En el caso de PWD 🐳, los resultados han sido los siguientes:
+  - Arranque:  menos de 1 segundo.
+  - El consumo de memoria arranca en torno a los 25 megas, que escala hasta los 50 en continuas ejecuciones y desciende a 10.
+  - Carga en torno a 4500 clases.
+  - Consume en arranque en torno al 1,5% del procesador, y 0,1% en ejecución.
 
 ## Actividad extra. Spring Web
 

@@ -147,7 +147,7 @@ En el resultado veremos el mensaje sobre el arranque del entorno de desarrollo d
   sudo apt-get update
   sudo apr-get install curl
   ```
-  
+  > 🐳 Si estais utilizando PWD, abriros otra terminal y os conectais por ssh a la máquina para ejecutar el comando curl. Otra alternativa, es desde la web, dar al botón **Open port** e indicar el 8080.
   
 - \[Optional\] Vamos ahora a comprobar el funcionamiento del despliegue automático de los cambios. Vamos a modificar la respuesta del servicio para que responda de una manera más personalizada para nuestro Openathon. Dentro del proyecto, modificamos en main\acctnr\openathon\started\GreetingResource el mensaje de retorno de la función:
 

@@ -63,6 +63,7 @@ Para la alternativa de Linux virtualizado hemos realizado un par de documentos q
 Play with Docker es una plataforma web que nos permite trabajar con maquina linux con Docker instalado (mirar el siguiente [enlace](https://github.com/Accenture/openathon-2019-docker/tree/master/lab-00) para más información e instalación inicial). 
 
 > :warning: En nuestra máquina local tenemos que tener Java instalado. Ademas, se recomienda, si se usa Windows, tener Putty u otro cliente ssh para conectarnos a la máquina remota.
+> Para copiar y pegar en la consola web de PWD, hacer Control + Shift + C y Control + Shift + V
 
 Os vamos a dejar dos opciones, una que consiste en la ejecución de un script que hemos creado y otra ir paso a paso, instalando cada una de las herramientas:
 

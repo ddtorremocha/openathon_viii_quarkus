@@ -156,7 +156,7 @@ Comprobamos que la nueva imagen ocupa 318MB.
 
 - Lanzar la imagen al contenedor.
 ```console
-docker run -p 8081:8081 openathon/spring
+docker run -p 8080:8080 openathon/spring
 ```
 Comprobamos el tiempo de arranque de la aplicación, que en este caso son 8 segundos.
 ```console

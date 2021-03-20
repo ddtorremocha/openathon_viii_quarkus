@@ -2,7 +2,7 @@
     <img src="resources/header_viii.png">
 </p>
 
-# Openathon VIII QUARKUS
+# Openathon VIII QUARKUS 🚀
 
 Bienvenidos a una nueva edición de nuestro Openathon de Custom Application. 
 

@@ -45,7 +45,7 @@ Venga... distraeros un poco, ayudar a nuestros minions a encontrar el camino a Q
 
 <img src="../resources/laberinto.png">
 
-Cuando acabe el proceso, podemos comprobar en el contenedor que se ha descargado una nueva imagen [“quay.io/quarkus/ubi-quarkus-native-image”](https://quay.io/repository/quarkus/ubi-quarkus-native-image?tab=info). Y que en el directorio target del proyecto hay creado un jar openathon-quarkus-avd-1.0.0-SNAPSHOT-runner nuevo fichero “openathon-quarkus-1.0.0-SNAPSHOT-native-image-source-jar” que contiene la imagen nativa.
+Cuando acabe el proceso, podemos comprobar en el contenedor que se ha descargado una nueva imagen [“quay.io/quarkus/ubi-quarkus-native-image”](https://quay.io/repository/quarkus/ubi-quarkus-native-image?tab=info). Y que en el directorio target del proyecto hay creado un jar *openathon-quarkus-avd-1.0.0-SNAPSHOT-runner* y un nuevo fichero *openathon-quarkus-1.0.0-SNAPSHOT-native-image-source-jar* que contiene la imagen nativa.
 
 ## Dockerizando
 
@@ -83,6 +83,7 @@ Comprobamos el tiempo de arranque de la imagen en 0,072, frente a los 0.995s de 
 ```console
 2021-02-14 21:14:33,599 INFO  [io.quarkus] (main) getting-started-quarkus 1.0.0-SNAPSHOT native (powered by Quarkus 1.11.3.Final) started in 0.072s. Listening on: http://0.0.0.0:8080
 ```
+> 🐳 En el caso de PWD, se pueden ver 0.041s
 
 ¡¡¡ 0.072 segundos !!! definitivamente es una mejora espectacular.
 

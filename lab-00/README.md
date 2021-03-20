@@ -42,7 +42,7 @@ Para realizar las actividades, necesitamos comprobar que la máquina donde vamos
 
 ## Alternativas para la ejecución del laboratorio en un pc windows
 
-Previendo que los participantes podemos tener problemas para cumplir los requisitos especificados, hemos preparado cuatro posibles formas de realizar los laboratorios. Cada uno debe decidir cual es la que le resulta más adecuada:
+Previendo que los participantes podemos tener problemas para cumplir los requisitos especificados, hemos preparado cuatro posibles formas de realizar los laboratorios. Cada uno debe decidir cual es la que le resulta más adecuada (más abajo se explica la alternativa de *Linux virtualizado* y de *Play With Docker*):
 
 |   | Alternativa | Pros | Contras |
 | --- | --- | --- | --- |
@@ -51,6 +51,8 @@ Previendo que los participantes podemos tener problemas para cumplir los requisi
 | 3 | Linux Virtualizado (VirtualBox, VMWAre, etc) | Aisla la instalación de herramientas y actua como una sandbox. Es una manera de entrar al mundo Linux / linea de comandos si no lo has hecho nunca. | Limitaciones de espacio, puede requerir 15-20GB libres.  |
 | 4 | Mac o Linux Workstation| Si es tu herramienta de trabajo habitual es cómodo. | Puede haber incompatibilidades con software instalado. |
 
+### Linux virtualizado 🐧
+
 Para la alternativa de Linux virtualizado hemos realizado un par de documentos que explican la instalación paso a paso de un Xubuntu 20.04 sobre Oracle VM VirtualBox y tambien la preparacion del entorno de desarrollo necesario para el Openathon.
 
  - [XubuntuVirtualBoxInstallation.pdf](../resources/XubuntuVirtualBoxInstallation.pdf),  instalación de Xubuntu con Virtual Box paso a paso
@@ -58,7 +60,7 @@ Para la alternativa de Linux virtualizado hemos realizado un par de documentos q
 
 
 
-### Play with Docker (PWD)
+### Alternativa Zero Config - Play With Docker (PWD) 🐳
 
 Play with Docker es una plataforma web que nos permite trabajar con maquina linux con Docker instalado (mirar el siguiente [enlace](https://github.com/Accenture/openathon-2019-docker/tree/master/lab-00) para más información e instalación inicial). 
 

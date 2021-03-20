@@ -71,11 +71,20 @@ Os vamos a dejar dos opciones, una que consiste en la ejecución de un script qu
 
 #### Ejecución de script
 
-En script se encuentra en el siguiente [enlace](../resources/init-pwd.sh). Tenemos que descargar el script en la maquina de PWD y ejecutarlo con *source* (para mantener las variables de entorno):
+En script se encuentra en el siguiente [enlace](../resources/init-pwd.sh). 
+
+Lo primero es reniciar el programa sshd para poder hacer port forwarding que nos permitirá monitorizar remotamente el proceso java desde nuestra máquina local:
+
+```sh
+# Reiniciar sshd para que nos permita hacer port forwarding y poder monitorizar el proceso java
+kill -9 $(pidof sshd)
+/usr/sbin/sshd -o AllowTcpForwarding=yes -o PermitRootLogin=yes
+```
+
+Después, tenemos que descargar el script en la maquina de PWD y ejecutarlo con *source* (para mantener las variables de entorno):
 
 ```sh
 wget https://raw.githubusercontent.com/ddtorremocha/openathon_viii_quarkus/main/resources/init-pwd.sh -O init-pwd.sh
-
 source init-pwd.sh
 ```
 
@@ -93,7 +102,7 @@ $JAVA_HOME/bin/jconsole
 
 Si todo está correcto veremos la gráficas de monitorización del proceso java remoto.
 
-Ahora matamos el proceso java ejecutando el siguiente comando:
+Ahora matamos el proceso java ejecutando el siguiente comando en la terminar conectada a PWD:
 
 ```sh
 pkill java

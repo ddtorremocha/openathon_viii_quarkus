@@ -94,10 +94,8 @@ Enter file in which to save the key (/Users/josdev27/.ssh/id_rsa):
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 Your identification has been saved in /Users/josdev27/.ssh/id_rsa.
-Your public key has been saved in /Users/j.carrasco.galiano/.ssh/id_rsa.pub.
+Your public key has been saved in /Users/josdev27/.ssh/id_rsa.pub.
 The key fingerprint is:
-SHA256:CmQzDINAyM78bKm1ljFgVN3NMbttXmExnFaci5pkftk josdev27@pc
-The key's randomart image is:
 ...
 ```
 
@@ -202,10 +200,7 @@ Enter file in which to save the key (/Users/josdev27/.ssh/id_rsa):
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 Your identification has been saved in /Users/josdev27/.ssh/id_rsa.
-Your public key has been saved in /Users/j.carrasco.galiano/.ssh/id_rsa.pub.
-The key fingerprint is:
-SHA256:CmQzDINAyM78bKm1ljFgVN3NMbttXmExnFaci5pkftk josdev27@pc
-The key's randomart image is:
+Your public key has been saved in /Users/josdev27/.ssh/id_rsa.pub.
 ...
 ```
 

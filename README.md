@@ -6,7 +6,7 @@
 
 Bienvenidos a una nueva edición de nuestro Openathon de Custom Application. 
 
-En esta ocasión vamos a introducirnos en Quarkus, una alternativa novedosa como solución para la creación de aplicaciones basadas en microservicios en la nube. Quarkus nos ofrece novedades como la posibilidad de crear imagenes nativas, que mejoran de manera significativa la necesidad de recursos y los tiempos de respuestas de nuestros servicios.
+En esta ocasión vamos a introducirnos en Quarkus, una alternativa novedosa como solución para la creación de aplicaciones basadas en microservicios en la nube. Quarkus nos ofrece novedades como la posibilidad de crear imagenes nativas, que mejoran de manera significativa la necesidad de recursos y los tiempos de respuestas de nuestros servicios. 
 
 Juntos vamos a descubir que es Quarkus, como crear una aplicación desde cero, crear una imagen nativa y desplegarla en un contenedor Docker. Ademas vamos a comparar sus características con las de la alternativa más conocida: Spring Boot, crearemos el mismo proyecto en Spring Boot y compararemos sus tamaños, consumos de memoria y tiempos de activación.
 
